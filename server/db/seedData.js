@@ -31,7 +31,7 @@ const recipes = [
         image_URL: "https://images.pexels.com/photos/19252758/pexels-photo-19252758/free-photo-of-whiskey-with-ice-cubes-and-orange-peel-in-lowball-glass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
-        name: "Piña Colada",x
+        name: "Piña Colada",
         type: "cocktail",
         recipe_yield: 2,
         description: "A tropical delight blending coconut cream, pineapple juice, and rum, served over ice.",
