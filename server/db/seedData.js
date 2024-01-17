@@ -14,70 +14,70 @@ const recipes = [
         type: "cocktail",
         recipe_yield: 1,
         description: "A classic tequila-based cocktail with the perfect balance of lime and orange flavors.",
-        image_URL: "https://images.pexels.com/photos/4051355/pexels-photo-4051355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image_url: "https://images.pexels.com/photos/4051355/pexels-photo-4051355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
         name: "Virgin Mojito",
         type: "mocktail",
         recipe_yield: 1,
         description: "A refreshing non-alcoholic version of the popular mint and lime drink, perfect for a sober twist.",
-        image_URL: "https://images.pexels.com/photos/4021983/pexels-photo-4021983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image_url: "https://images.pexels.com/photos/4021983/pexels-photo-4021983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
         name: "Old Fashioned",
         type: "cocktail",
         recipe_yield: 1,
         description: "A timeless bourbon cocktail, muddled with sugar and bitters, garnished with an orange twist.",
-        image_URL: "https://images.pexels.com/photos/19252758/pexels-photo-19252758/free-photo-of-whiskey-with-ice-cubes-and-orange-peel-in-lowball-glass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image_url: "https://images.pexels.com/photos/19252758/pexels-photo-19252758/free-photo-of-whiskey-with-ice-cubes-and-orange-peel-in-lowball-glass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
         name: "Piña Colada",
         type: "cocktail",
         recipe_yield: 2,
         description: "A tropical delight blending coconut cream, pineapple juice, and rum, served over ice.",
-        image_URL: "https://www.thespruceeats.com/thmb/LI3MXdfPpSL1UbOrcMOXek0u49o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/frozen-pina-colada-recipe-759297-Hero-1-c53f5c55f6b14b3e8fea901076e4b130.jpg"
+        image_url: "https://www.thespruceeats.com/thmb/LI3MXdfPpSL1UbOrcMOXek0u49o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/frozen-pina-colada-recipe-759297-Hero-1-c53f5c55f6b14b3e8fea901076e4b130.jpg"
     },
     {
         name: "Berry Sparkler",
         type: "mocktail",
         recipe_yield: 4,
         description: "A fruity and fizzy non-alcoholic drink featuring mixed berries and sparkling water.",
-        image_URL: "https://hips.hearstapps.com/hmg-prod/images/triple-berry-sparklers-1647984999.jpg?crop=1.00xw:0.718xh;0,0.216xh&resize=1200:*"
+        image_url: "https://hips.hearstapps.com/hmg-prod/images/triple-berry-sparklers-1647984999.jpg?crop=1.00xw:0.718xh;0,0.216xh&resize=1200:*"
     },
     {
         name: "Negroni",
         type: "cocktail",
         recipe_yield: 1,
         description: "A bold and bitter cocktail made with gin, vermouth, and Campari, garnished with an orange slice.",
-        image_URL: "https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image_url: "https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
         name: "Cucumber Mint Cooler",
         type: "mocktail",
         recipe_yield: 2,
         description: "A cooling mocktail with cucumber, mint, and lime, perfect for a refreshing sip on a hot day.",
-        image_URL: "https://www.rotinrice.com/wp-content/uploads/2015/08/IMG_6549.jpg"
+        image_url: "https://www.rotinrice.com/wp-content/uploads/2015/08/IMG_6549.jpg"
     },
     {
         name: "Whiskey Sour",
         type: "cocktail",
         recipe_yield: 1,
         description: "A classic sour cocktail featuring whiskey, lemon juice, and a touch of simple syrup.",
-        image_URL: "https://images.pexels.com/photos/6542662/pexels-photo-6542662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image_url: "https://images.pexels.com/photos/6542662/pexels-photo-6542662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
         name: "Shirley Temple",
         type: "mocktail",
         recipe_yield: 1,
         description: "A sweet and bubbly non-alcoholic drink made with ginger ale, grenadine, and a maraschino cherry garnish.",
-        image_URL: " https://bellyfull.net/wp-content/uploads/2020/12/Shirley-Temple-Drink-blog.jpg"
+        image_url: " https://bellyfull.net/wp-content/uploads/2020/12/Shirley-Temple-Drink-blog.jpg"
     },
     {
         name: "Espresso Martini",
         type: "cocktail",
         recipe_yield: 1,
         description: "A sophisticated cocktail blending vodka, coffee liqueur, and freshly brewed espresso for a caffeinated kick.",
-        image_URL: "https://hips.hearstapps.com/hmg-prod/images/210923-delish-seo-espresso-martini-horizontal-0087-eb-1633535263.jpg?crop=0.8893229166666666xw:1xh;center,top&resize=1200:*"
+        image_url: "https://hips.hearstapps.com/hmg-prod/images/210923-delish-seo-espresso-martini-horizontal-0087-eb-1633535263.jpg?crop=0.8893229166666666xw:1xh;center,top&resize=1200:*"
     }
 ];
 
