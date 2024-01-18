@@ -1,6 +1,3 @@
-const { Description } = require("@mui/icons-material")
-const { ingredients } = require("./seedData")
-
 const formatData = (data) => {
     const result = {
         recipe_id: data[0].recipe_id,
