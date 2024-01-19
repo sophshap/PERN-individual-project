@@ -4,8 +4,9 @@ const app = express()
 const port = 8080
 const client = require('./db/client')
 const recipeRoutes = require("./routes/recipeRoutes")
+const cors = require("cors")
 
-
+app.use(cors())
 app.use(morgan("combined"))
 app.use(express.json())
 

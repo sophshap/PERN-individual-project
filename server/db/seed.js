@@ -106,6 +106,9 @@ const createTables = async () => {
 }
 
 
+// use map to create an array of recipe insert promises (10)
+// await promise.all
+// do this for each array of data (also instructions and ingredients)
 
 const populateTables = async () => {
 
@@ -139,11 +142,6 @@ const populateTables = async () => {
 
 
 }
-
-// use map to create an array of recipe insert promises (10)
-// await promise.all
-// do this for each array of data (also instructions and ingredients) ((and users????))
-
 
 const buildDB = () => {
     connectDB().then(() => {
