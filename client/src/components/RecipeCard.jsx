@@ -1,10 +1,21 @@
 import React from 'react'
+import { Carousel } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 function RecipeCard({ recipe }) {
     return (
         <div className='recipe-card'>
-            <h1>{recipe.name}</h1>
-            <img className='w-100' src={recipe.image_url}/>
+            <div className='recipe-card-inner'>
+
+                <img className='h-75' src={recipe.image_url} />
+                <Carousel.Caption>
+                    <Link to={`/recipes/${recipe.recipe_id}`}>
+                        <h2>{recipe.name}</h2>
+                    </Link>
+                </Carousel.Caption>
+
+
+            </div>
         </div>
     )
 }

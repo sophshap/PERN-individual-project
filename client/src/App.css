@@ -3,14 +3,40 @@
 }
 
 .navbar {
+
+  border-style: none;
   border-radius: none !important;
 }
 
+.bg-body-tertiary {
+  background-color: #B3DBC3 !important;
+}
+
 #Home {
-  background-color: rgb(219, 238, 228);
+  background-color: rgb(219, 237, 238);
   min-height: 100vh;
 }
 
 .recipe-card {
-  width: 300px;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-card-inner {
+  height: 500px;
+}
+
+#site-title {
+  font-family: "Mistrully", "Cabin Sketch", cursive;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(0, 0, 0);
+}
+
+.carousel-caption h2 {
+  color: black;
 }

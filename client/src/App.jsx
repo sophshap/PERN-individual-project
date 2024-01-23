@@ -9,17 +9,17 @@ export const baseURL = import.meta.env.VITE_baseURL || "http://localhost:8080"
 
 
 function App() {
-
+  const [showNav, setShowNav] = useState(false)
 
   return (
     <>
       <BrowserRouter>
-        <Header />
+        {showNav && <Header />}
         <Routes>
 
-          <Route path='/' element={<Home />} />
-          <Route path='/recipes' element={<Recipes />} />
-          <Route path='/recipes/:id' element={<SingleRecipe />} />
+          <Route path='/' element={<Home setShowNav={setShowNav} />} />
+          <Route path='/recipes' element={<Recipes setShowNav={setShowNav} />} />
+          <Route path='/recipes/:id' element={<SingleRecipe setShowNav={setShowNav} />} />
 
         </Routes>
       </BrowserRouter>

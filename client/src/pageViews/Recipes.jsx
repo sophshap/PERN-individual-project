@@ -2,9 +2,11 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { baseURL } from '../App'
 import RecipeCard from '../components/RecipeCard'
+import { Carousel } from "react-bootstrap"
 
-function Recipes() {
+function Recipes({ setShowNav }) {
     const [recipeList, setRecipeList] = useState([])
+    setShowNav(true)
 
     useEffect(() => {
         const fetchAllRecipes = async () => {
@@ -24,13 +26,24 @@ function Recipes() {
 
         //map through the recipes
         //display the name and image of each
-        <div>
-            {recipeList.map((recipe) => {
-                return <RecipeCard recipe={recipe}/>
-            })}
+        <div className='pt-5'>
+            <Carousel interval={null} >
+
+
+                {recipeList.map((recipe) => {
+                    return (
+                        <Carousel.Item key={recipe.recipe_id}>
+
+                            <RecipeCard recipe={recipe} />
+
+                        </Carousel.Item>
+                    )
+                })}
+            </Carousel>
 
         </div>
     )
 }
 
 export default Recipes
+
