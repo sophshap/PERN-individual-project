@@ -2,6 +2,15 @@
   width: 40%;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+.my-nav {
+  margin-left: auto;
+}
+
+
 .navbar {
 
   border-style: none;
@@ -39,4 +48,49 @@
 
 .carousel-caption h2 {
   color: black;
+}
+
+#singleRecipeView img{
+  width: 100%;
+  min-width: 300px;
+}
+
+#singleRecipeView{
+  width: 75%;
+  flex-direction: row;
+  
+}
+
+#imageBadge {
+  width: 300px;
+}
+
+#imageBadge p{
+  transform: rotate(40deg);
+  right: -12px;
+  top: 5px;
+  background-color: #397d54;
+  font-size: 18px;
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 992px){
+  #singleRecipeView{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #singleRecipeView{
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #singleRecipeView img{
+   margin-bottom: 30px;
+  }
 }

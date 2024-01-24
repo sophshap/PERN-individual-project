@@ -15,13 +15,19 @@ function App() {
     <>
       <BrowserRouter>
         {showNav && <Header />}
-        <Routes>
+        <div className='d-flex justify-content-center'>
 
-          <Route path='/' element={<Home setShowNav={setShowNav} />} />
-          <Route path='/recipes' element={<Recipes setShowNav={setShowNav} />} />
-          <Route path='/recipes/:id' element={<SingleRecipe setShowNav={setShowNav} />} />
 
-        </Routes>
+          <Routes>
+
+            <Route path='/' element={<Home setShowNav={setShowNav} />} />
+            <Route path='/recipes' element={<Recipes setShowNav={setShowNav} />} />
+            <Route path='/recipes/:id' element={<SingleRecipe setShowNav={setShowNav} />} />
+
+          </Routes>
+
+
+        </div>
       </BrowserRouter>
     </>
   )

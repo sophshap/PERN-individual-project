@@ -26,7 +26,7 @@ function Recipes({ setShowNav }) {
 
         //map through the recipes
         //display the name and image of each
-        <div className='pt-5'>
+        <div className='pt-5 w-100'>
             <Carousel interval={null} >
 
 
