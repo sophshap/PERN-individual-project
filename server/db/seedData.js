@@ -78,6 +78,76 @@ const recipes = [
         recipe_yield: 1,
         description: "A sophisticated cocktail blending vodka, coffee liqueur, and freshly brewed espresso for a caffeinated kick.",
         image_url: "https://hips.hearstapps.com/hmg-prod/images/210923-delish-seo-espresso-martini-horizontal-0087-eb-1633535263.jpg?crop=0.8893229166666666xw:1xh;center,top&resize=1200:*"
+    },
+    {
+        name: "French 77",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "A French twist on the classic Champagne cocktail, combining gin, elderflower liqueur, and sparkling wine.",
+        image_url: "https://www.acouplecooks.com/wp-content/uploads/2021/11/French-77-003s.jpg"
+    },
+    {
+        name: "Manhattan",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "An elegant whiskey cocktail made with sweet vermouth and bitters, garnished with a cherry.",
+        image_url: "https://www.liquor.com/thmb/DR2UAsRlu-YCVn9r_iLJCmOvzlg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/manhattan-4000x4000-primary-ig-9c3d894510284e9d8fbd9c518d00790b.jpg"
+    },
+    {
+        name: "Sex on the Beach",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "A fruity and tropical cocktail with vodka, peach schnapps, cranberry juice, and orange juice.",
+        image_url: "https://www.allrecipes.com/thmb/jgUBewi7-dIrLBAgMi6meC7s_zw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/24221-Sex-On-The-Beach-DDMFS-4x3-cd29644eb4e34a63a362584a342b4a30.jpg"
+    },
+    {
+        name: "Paloma",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "A refreshing tequila-based cocktail with grapefruit soda, lime juice, and a pinch of salt.",
+        image_url: "https://assets.bonappetit.com/photos/62cdd8cedc3e934b224d8fb5/4:3/w_2132,h_1599,c_limit/0712-paloma-lede.jpg"
+    },
+    {
+        name: "Cosmopolitan",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "A classic vodka cocktail featuring cranberry juice, triple sec, and a splash of lime juice.",
+        image_url: "https://assets.bonappetit.com/photos/650df690c94ec4218673b45a/1:1/w_2560%2Cc_limit/20230915-WEB-SEO-0882_update%2520copy.jpg"
+    },
+    {
+        name: "Bloody Mary",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "A savory and spicy cocktail made with vodka, tomato juice, Worcestershire sauce, and hot sauce.",
+        image_url: "https://static01.nyt.com/images/2020/05/17/magazine/17mag-eat/17mag-eat-superJumbo.jpg"
+    },
+    {
+        name: "Aperol Spritz",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "A light and refreshing Italian cocktail with Aperol, Prosecco, and a splash of soda water.",
+        image_url: "https://www.liquor.com/thmb/1ZharnCZtEmyUkKfEm8dh07MV8g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/aperol-spritz-720x720-primary-985457b239d7427da2f8b4be17131caa.jpg"
+    },
+    {
+        name: "Sidecar",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "A classic brandy cocktail with Cointreau and lemon juice, served in a sugar-rimmed glass.",
+        image_url: "https://img.delicious.com.au/rj9SGmTq/del/2020/12/sidecar-143900-1.jpg"
+    },
+    {
+        name: "Lychee Martini",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "A sweet and floral martini featuring lychee liqueur, vodka, and a splash of vermouth.",
+        image_url: "https://www.wokandskillet.com/wp-content/uploads/2017/06/rsz_lychee_martini-9.jpg.webp"
+    },
+    {
+        name: "Sangria",
+        type: "cocktail",
+        recipe_yield: 1,
+        description: "A fruity and wine-based punch with mixed fruits, brandy, and a hint of sweetness.",
+        image_url: "https://www.allrecipes.com/thmb/MDmejvMxqPCS5EXNzxx6atFgwnA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/222520sangria-cocktaillutzflcat4x3-a49b63c5dde34c1281dacfc0a2b8c934.jpg"
     }
 ];
 
@@ -112,6 +182,40 @@ const ingredients = [
     { recipe_id: 10, name: "vodka", amount: "1 oz" },
     { recipe_id: 10, name: "coffee liqueur", amount: "1 oz" },
     { recipe_id: 10, name: "espresso", amount: "1 oz" },
+    { recipe_id: 11, name: "gin", amount: "1 oz" },
+    { recipe_id: 11, name: "elderflower liqueur", amount: "1/2 oz" },
+    { recipe_id: 11, name: "sparkling wine", amount: "2 oz" },
+    { recipe_id: 12, name: "bourbon", amount: "2 oz" },
+    { recipe_id: 12, name: "sweet vermouth", amount: "1 oz" },
+    { recipe_id: 12, name: "bitters", amount: "2 dashes" },
+    { recipe_id: 13, name: "vodka", amount: "1 oz" },
+    { recipe_id: 13, name: "peach schnapps", amount: "1/2 oz" },
+    { recipe_id: 13, name: "cranberry juice", amount: "2 oz" },
+    { recipe_id: 13, name: "orange juice", amount: "1 oz" },
+    { recipe_id: 14, name: "tequila", amount: "2 oz" },
+    { recipe_id: 14, name: "grapefruit soda", amount: "4 oz" },
+    { recipe_id: 14, name: "lime juice", amount: "1 oz" },
+    { recipe_id: 15, name: "vodka", amount: "1 oz" },
+    { recipe_id: 15, name: "cranberry juice", amount: "1 oz" },
+    { recipe_id: 15, name: "triple sec", amount: "1/2 oz" },
+    { recipe_id: 15, name: "lime juice", amount: "1/2 oz" },
+    { recipe_id: 16, name: "vodka", amount: "2 oz" },
+    { recipe_id: 16, name: "tomato juice", amount: "4 oz" },
+    { recipe_id: 16, name: "Worcestershire sauce", amount: "1 dash" },
+    { recipe_id: 16, name: "hot sauce", amount: "1 dash" },
+    { recipe_id: 17, name: "Aperol", amount: "2 oz" },
+    { recipe_id: 17, name: "Prosecco", amount: "3 oz" },
+    { recipe_id: 17, name: "soda water", amount: "1 oz" },
+    { recipe_id: 18, name: "brandy", amount: "2 oz" },
+    { recipe_id: 18, name: "Cointreau", amount: "1 oz" },
+    { recipe_id: 18, name: "lemon juice", amount: "1 oz" },
+    { recipe_id: 19, name: "lychee liqueur", amount: "2 oz" },
+    { recipe_id: 19, name: "vodka", amount: "1 oz" },
+    { recipe_id: 19, name: "vermouth", amount: "1/2 oz" },
+    { recipe_id: 20, name: "red wine", amount: "750 ml" },
+    { recipe_id: 20, name: "orange juice", amount: "1 cup" },
+    { recipe_id: 20, name: "brandy", amount: "1/2 cup" },
+    { recipe_id: 20, name: "mixed fruits", amount: "2 cups" }
 ];
 
 
@@ -136,6 +240,26 @@ const instructions = [
     { recipe_id: 9, description: "Garnish with a maraschino cherry.", step_number: 2 },
     { recipe_id: 10, description: "Shake vodka, coffee liqueur, and espresso with ice and strain into a martini glass.", step_number: 1 },
     { recipe_id: 10, description: "Enjoy this caffeinated cocktail.", step_number: 2 },
+    { recipe_id: 11, description: "Combine gin and elderflower liqueur in a shaker with ice.", step_number: 1 },
+    { recipe_id: 11, description: "Shake well and strain into a Champagne flute. Top with sparkling wine.", step_number: 2 },
+    { recipe_id: 12, description: "Stir bourbon, sweet vermouth, and bitters with ice. Strain into a chilled glass.", step_number: 1 },
+    { recipe_id: 12, description: "Garnish with a cherry.", step_number: 2 },
+    { recipe_id: 13, description: "Combine vodka, peach schnapps, cranberry juice, and orange juice in a shaker with ice.", step_number: 1 },
+    { recipe_id: 13, description: "Shake well and strain into a highball glass filled with ice.", step_number: 2 },
+    { recipe_id: 14, description: "Combine tequila, grapefruit soda, and lime juice in a shaker with ice.", step_number: 1 },
+    { recipe_id: 14, description: "Shake well and strain into a salt-rimmed glass filled with ice.", step_number: 2 },
+    { recipe_id: 15, description: "Shake vodka, cranberry juice, triple sec, and lime juice in a shaker with ice.", step_number: 1 },
+    { recipe_id: 15, description: "Strain into a chilled martini glass.", step_number: 2 },
+    { recipe_id: 16, description: "In a shaker, mix vodka, tomato juice, Worcestershire sauce, and hot sauce with ice.", step_number: 1 },
+    { recipe_id: 16, description: "Strain into a glass filled with ice. Garnish with celery and a lemon wedge.", step_number: 2 },
+    { recipe_id: 17, description: "Fill a wine glass with ice. Add Aperol, Prosecco, and soda water. Stir gently.", step_number: 1 },
+    { recipe_id: 17, description: "Garnish with an orange slice.", step_number: 2 },
+    { recipe_id: 18, description: "Shake brandy, Cointreau, and lemon juice in a shaker with ice. Strain into a sugar-rimmed glass.", step_number: 1 },
+    { recipe_id: 18, description: "Garnish with a lemon twist.", step_number: 2 },
+    { recipe_id: 19, description: "Shake lychee liqueur, vodka, and vermouth in a shaker with ice. Strain into a chilled martini glass.", step_number: 1 },
+    { recipe_id: 19, description: "Garnish with a lychee fruit.", step_number: 2 },
+    { recipe_id: 20, description: "In a pitcher, combine red wine, orange juice, brandy, and mixed fruits. Stir well.", step_number: 1 },
+    { recipe_id: 20, description: "Refrigerate for at least 2 hours before serving.", step_number: 2 }
 ];
 
 module.exports = { users, recipes, ingredients, instructions }

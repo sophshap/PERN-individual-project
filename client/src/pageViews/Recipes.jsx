@@ -6,9 +6,9 @@ import { Carousel } from "react-bootstrap"
 
 function Recipes({ setShowNav }) {
     const [recipeList, setRecipeList] = useState([])
-    setShowNav(true)
 
     useEffect(() => {
+        setShowNav(true)
         const fetchAllRecipes = async () => {
             try {
                 const response = await fetch(`${baseURL}/recipes`);
@@ -23,25 +23,26 @@ function Recipes({ setShowNav }) {
     }, [])
 
     return (
+        <>
+            {/* //map through the recipes
+        //display the name and image of each */}
+            <div className='pt-5 w-100'>
+                <Carousel interval={null} >
 
-        //map through the recipes
-        //display the name and image of each
-        <div className='pt-5 w-100'>
-            <Carousel interval={null} >
 
+                    {recipeList.map((recipe) => {
+                        return (
+                            <Carousel.Item key={recipe.recipe_id}>
 
-                {recipeList.map((recipe) => {
-                    return (
-                        <Carousel.Item key={recipe.recipe_id}>
+                                <RecipeCard recipe={recipe} />
 
-                            <RecipeCard recipe={recipe} />
+                            </Carousel.Item>
+                        )
+                    })}
+                </Carousel>
 
-                        </Carousel.Item>
-                    )
-                })}
-            </Carousel>
-
-        </div>
+            </div>
+        </>
     )
 }
 
