@@ -70,7 +70,7 @@ const recipes = [
         type: "mocktail",
         recipe_yield: 1,
         description: "A sweet and bubbly non-alcoholic drink made with ginger ale, grenadine, and a maraschino cherry garnish.",
-        image_url: " https://bellyfull.net/wp-content/uploads/2020/12/Shirley-Temple-Drink-blog.jpg"
+        image_url: "https://www.recipeboy.com/wp-content/uploads/2011/05/Shirley-Temple-1-1.jpg"
     },
     {
         name: "Espresso Martini",
