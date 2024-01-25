@@ -55,7 +55,7 @@ const recipes = [
         name: "Cucumber Mint Cooler",
         type: "mocktail",
         recipe_yield: 2,
-        description: "A cooling mocktail with cucumber, mint, and lime, perfect for a refreshing sip on a hot day.",
+        description: "A cooling mocktail with club soda, cucumber, mint, and lime, perfect for a refreshing sip on a hot day.",
         image_url: "https://www.rotinrice.com/wp-content/uploads/2015/08/IMG_6549.jpg"
     },
     {
@@ -173,6 +173,7 @@ const ingredients = [
     { recipe_id: 7, name: "cucumber", amount: "4 slices" },
     { recipe_id: 7, name: "mint leaves", amount: "6 leaves" },
     { recipe_id: 7, name: "lime", amount: "1, juiced" },
+    { recipe_id: 7, name: "club soda", amount: "2oz" },
     { recipe_id: 8, name: "whiskey", amount: "2 oz" },
     { recipe_id: 8, name: "lemon juice", amount: "3/4 oz" },
     { recipe_id: 8, name: "simple syrup", amount: "1/2 oz" },
@@ -233,7 +234,7 @@ const instructions = [
     { recipe_id: 6, description: "Stir gin, vermouth, and Campari over ice and strain into a glass.", step_number: 1 },
     { recipe_id: 6, description: "Garnish with an orange slice.", step_number: 2 },
     { recipe_id: 7, description: "Muddle cucumber slices and mint leaves in a shaker.", step_number: 1 },
-    { recipe_id: 7, description: "Add lime juice and shake well with ice.", step_number: 2 },
+    { recipe_id: 7, description: "Add lime juice and club soda and shake well with ice.", step_number: 2 },
     { recipe_id: 8, description: "Shake whiskey, lemon juice, and simple syrup with ice and strain into a glass.", step_number: 1 },
     { recipe_id: 8, description: "Garnish with a lemon slice.", step_number: 2 },
     { recipe_id: 9, description: "Pour ginger ale and grenadine over ice in a glass and stir.", step_number: 1 },
