@@ -2,10 +2,14 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { baseURL } from '../App'
 import RecipeCard from '../components/RecipeCard'
-import { Carousel } from "react-bootstrap"
+import { Carousel, Col, Row } from "react-bootstrap"
 
 function Recipes({ setShowNav }) {
     const [recipeList, setRecipeList] = useState([])
+    const [search, setSearch] = useState("")
+
+    const searchResults = recipeList.filter((recipe) => recipe.name.toLowerCase().includes(search.toLowerCase()))
+    console.log(searchResults)
 
     useEffect(() => {
         setShowNav(true)
@@ -23,10 +27,17 @@ function Recipes({ setShowNav }) {
     }, [])
 
     return (
+
+
         <>
-            {/* //map through the recipes
-        //display the name and image of each */}
+
+
+
             <div className='pt-5 w-100'>
+
+                <h1 className='text-center'>Browse Recipes</h1>
+        
+
                 <Carousel interval={null} >
 
 
@@ -34,13 +45,33 @@ function Recipes({ setShowNav }) {
                         return (
                             <Carousel.Item key={recipe.recipe_id}>
 
-                                <RecipeCard recipe={recipe} />
+                                <RecipeCard inCarousel={true} recipe={recipe} />
 
                             </Carousel.Item>
                         )
                     })}
                 </Carousel>
 
+                <h1 className='text-center'>...or Search By Drink Name</h1>
+
+                <div id="searchbarContainer">
+                    <input id="searchbar" placeholder="Search Recipes" type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
+                </div>
+
+                <Row className='searchResults'>
+
+                    {search != "" && searchResults.map((recipe) => {
+                        return (
+                            <Col lg={3} md={6} sm={12} key={recipe.recipe_id}>
+
+                                <RecipeCard inCarousel={false}
+                                    recipe={recipe} />
+                            </Col>
+                        )
+
+                    })}
+
+                </Row>
             </div>
         </>
     )

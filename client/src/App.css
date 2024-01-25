@@ -24,17 +24,24 @@ a {
 #Home {
   background-color: rgb(219, 237, 238);
   min-height: 100vh;
+  width: 100%;
 }
 
 .recipe-card {
-
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.recipe-card-inner {
-  height: 500px;
+.recipe-card-inner-carousel {
+  height: 650px;
+
+}
+
+.recipe-card-inner-search {
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #site-title {
@@ -50,22 +57,27 @@ a {
   color: black;
 }
 
-#singleRecipeView img{
+#singleRecipeView img {
   width: 100%;
   min-width: 300px;
 }
 
-#singleRecipeView{
+#singleRecipeView {
   width: 75%;
+  flex-direction: column;
+
+}
+
+.singleViewContent {
+  display: flex;
   flex-direction: row;
-  
 }
 
 #imageBadge {
   width: 300px;
 }
 
-#imageBadge p{
+#imageBadge p {
   transform: rotate(40deg);
   right: -12px;
   top: 5px;
@@ -76,21 +88,67 @@ a {
   padding: 5px 10px;
 }
 
+.carouselImage {
+  height: 80%;
+}
+
+.searchResultsImage {
+  height: 200px;
+}
+
+.searchResults {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#searchbarContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#searchbar {
+  padding: 5px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.name-hover {
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: rgb(202, 228, 219);
+}
+
+.name-hover:hover {
+  color: #397d54;
+}
+
+.backButton{
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
 /* media queries */
 
-@media screen and (max-width: 992px){
-  #singleRecipeView{
+@media screen and (max-width: 992px) {
+  #singleRecipeView {
     width: 90%;
   }
 }
 
-@media screen and (max-width: 768px){
-  #singleRecipeView{
+@media screen and (max-width: 768px) {
+  #singleRecipeView {
     width: 95%;
-    flex-direction: column;
     align-items: center;
   }
-  #singleRecipeView img{
-   margin-bottom: 30px;
+
+  .singleViewContent {
+    flex-direction: column;
+  }
+
+  #singleRecipeView img {
+    margin-bottom: 30px;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { baseURL } from '../App'
 
 function SingleRecipe({ setShowNav }) {
@@ -23,49 +23,54 @@ function SingleRecipe({ setShowNav }) {
     }, [id])
 
 
-    // display image
-    // display (description, type, yield)
-    //map through ingredients (ul), return li's (name, amount)
-    //map through steps (ol), return li's (description)
-
-
     return (
         <div id='singleRecipeView' className='pt-5 d-flex justify-content-center' >
-            {recipe && (
-                <>
-                    <div id='imageBadge' className='position-relative'>
-                        {recipe.type == "mocktail" && <p className='position-absolute'>Mocktail</p>}
-                        <img src={recipe.image_url} />
-                    </div>
+            <div className='d-flex justify-content-start w-100'>
+                <Link to="/recipes">
+                    <button className='backButton'>Back</button>
+                </Link>
 
-                    <div className='px-3'>
-                        <h1 className='text-center'>{recipe.name}</h1>
-                        <p>{recipe.description}</p>
-                        <p>Serving size: {recipe.recipe_yield}</p>
+            </div>
 
-                        <ul>
-                            {recipe.ingredients.map((ingredient) => {
-                                return <li key={ingredient.ingredient_id}>{ingredient.name} ({ingredient.amount})</li>
-                            })}
-                        </ul>
+            <div className='singleViewContent'>
+                {recipe && (
+                    <>
+                        <div id='imageBadge' className='position-relative'>
+                            {recipe.type == "mocktail" && <p className='position-absolute'>Mocktail</p>}
+                            <img src={recipe.image_url} />
+                        </div>
 
-                        <ol>
-                            {recipe.instructions.map((instruction) => {
-                                return <li key={instruction.instruction_id}>{instruction.description}</li>
-                            })}
-                        </ol>
+                        <div className='px-3'>
+                            <h1 className='text-center'>{recipe.name}</h1>
+                            <p>{recipe.description}</p>
+                            <p>Serving size: {recipe.recipe_yield}</p>
+
+                            <ul>
+                                {recipe.ingredients.map((ingredient) => {
+                                    return <li key={ingredient.ingredient_id}>{ingredient.name} ({ingredient.amount})</li>
+                                })}
+                            </ul>
+
+                            <ol>
+                                {recipe.instructions.map((instruction) => {
+                                    return <li key={instruction.instruction_id}>{instruction.description}</li>
+                                })}
+                            </ol>
 
 
 
 
-                    </div>
+                        </div>
 
 
 
 
 
-                </>
-            )}
+                    </>
+                )}
+
+
+            </div>
 
 
         </div>
