@@ -2,9 +2,11 @@ import Container from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useNavigate } from 'react-router-dom';
 
 
-function Header() {
+function Header({ setToken, token }) {
+    const navigate = useNavigate()
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
@@ -20,6 +22,16 @@ function Header() {
                         <LinkContainer to="/recipes">
                             <Nav.Link>Recipes</Nav.Link>
                         </LinkContainer>
+                        {token ? (
+
+                            <Nav.Link onClick={() => {setToken(null); 
+                            navigate("/")}}>Logout</Nav.Link>
+
+                        ) : (
+                            <LinkContainer to="/login">
+                                <Nav.Link>Login</Nav.Link>
+                            </LinkContainer>
+                        )}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
