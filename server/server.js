@@ -4,6 +4,7 @@ const app = express()
 const port = 8080
 const client = require('./db/client')
 const recipeRoutes = require("./routes/recipeRoutes")
+const userRoutes = require("./routes/userRoutes")
 const cors = require("cors")
 
 app.use(cors())
@@ -14,10 +15,11 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.use("/recipes", recipeRoutes)
+app.use("/users", userRoutes)
 
-client.connect().then(()=>{
-    console.log("DB Connected")
-    app.listen(port, () => {
-      console.log(`App listening on port ${port}`)
-    })
+client.connect().then(() => {
+  console.log("DB Connected")
+  app.listen(port, () => {
+    console.log(`App listening on port ${port}`)
+  })
 })

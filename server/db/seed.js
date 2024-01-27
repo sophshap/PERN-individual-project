@@ -46,9 +46,10 @@ const createTables = async () => {
     user_id SERIAL PRIMARY KEY,
     first_name VARCHAR NOT NULL,
     last_name VARCHAR NOT NULL,
-    username VARCHAR NOT NULL,
+    username VARCHAR UNIQUE NOT NULL,
     password VARCHAR NOT NULL,
-    email VARCHAR NOT NULL
+    email VARCHAR UNIQUE NOT NULL,
+    is_admin BOOLEAN DEFAULT false
 );`
     console.log("creating table users")
     await client.query(createUsersQuery)

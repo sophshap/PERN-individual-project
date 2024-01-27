@@ -1,10 +1,19 @@
 const users = [
     {
-        first_name: "john",
-        last_name: "smith",
-        username: "user123",
+        first_name: "sophie",
+        last_name: "shapiro",
+        username: "admin",
         password: "password",
-        email: "email@email.com"
+        email: "email@email.com",
+        is_admin: true
+    },
+    {
+        first_name: "test",
+        last_name: "tester",
+        username: "test",
+        password: "password",
+        email: "email2@email.com",
+        is_admin: false
     }
 ]
 
