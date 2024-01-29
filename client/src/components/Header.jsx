@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useNavigate } from 'react-router-dom';
 
-
 function Header({ setToken, token }) {
     const navigate = useNavigate()
     return (
@@ -23,10 +22,10 @@ function Header({ setToken, token }) {
                             <Nav.Link>Recipes</Nav.Link>
                         </LinkContainer>
                         {token ? (
-
-                            <Nav.Link onClick={() => {setToken(null); 
-                            navigate("/")}}>Logout</Nav.Link>
-
+                            <Nav.Link onClick={() => {
+                                setToken(null);
+                                navigate("/")
+                            }}>Logout</Nav.Link>
                         ) : (
                             <LinkContainer to="/login">
                                 <Nav.Link>Login</Nav.Link>

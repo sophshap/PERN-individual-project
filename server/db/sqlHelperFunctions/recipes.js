@@ -7,7 +7,6 @@ INSERT INTO recipes (name, type, recipe_yield, description, image_url) VALUES ($
     return client.query(query, values)
 }
 
-
 const getRecipeByID = async (recipeID) => {
     const query = `
     SELECT recipes.recipe_id,
@@ -36,7 +35,6 @@ const getRecipeByID = async (recipeID) => {
     }
 }
 
-
 const getAllRecipes = async (recipeID) => {
     const query = `
     SELECT * FROM recipes;
@@ -50,15 +48,8 @@ const getAllRecipes = async (recipeID) => {
 }
 
 
-
-
-
-
 module.exports = { createRecipe, getRecipeByID, getAllRecipes }
 
 
-
-
-// updating recipes and deleting
 
 

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { baseURL } from "../App";
 
-
 export default function Login({ setToken, setShowNav }) {
 
     const navigate = useNavigate()
@@ -12,7 +11,6 @@ export default function Login({ setToken, setShowNav }) {
     useEffect(() => {
         setShowNav(true)
     }, [])
-
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -38,7 +36,6 @@ export default function Login({ setToken, setShowNav }) {
         }
     }
 
-
     return (
         <div className="login">
             <h1>Login</h1>
@@ -54,7 +51,7 @@ export default function Login({ setToken, setShowNav }) {
                     <input className="m-2" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <br />
-                <button className="mb-2"type="submit">Login</button>
+                <button className="mb-2" type="submit">Login</button>
                 <p>Don't have an account? Register <Link to="/register">here.
                 </Link></p>
             </form>

@@ -56,23 +56,10 @@ function SingleRecipe({ setShowNav }) {
                                     return <li key={instruction.instruction_id}>{instruction.description}</li>
                                 })}
                             </ol>
-
-
-
-
                         </div>
-
-
-
-
-
                     </>
                 )}
-
-
             </div>
-
-
         </div>
     )
 }

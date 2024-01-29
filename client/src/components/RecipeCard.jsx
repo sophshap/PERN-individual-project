@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 function RecipeCard({ recipe, inCarousel }) {
 
-
     return (
         <div className={`recipe-card ${inCarousel ? "w-100" : "m-4"}`}>
             <div className={inCarousel ? "recipe-card-inner-carousel" : "recipe-card-inner-search"} >
@@ -19,14 +18,11 @@ function RecipeCard({ recipe, inCarousel }) {
                             </button>
                         </Link>
                     </Carousel.Caption>
-
                 ) : (
                     <Link to={`/recipes/${recipe.recipe_id}`}>
                         <h2>{recipe.name}</h2>
                     </Link>
                 )}
-
-
             </div>
         </div>
     )

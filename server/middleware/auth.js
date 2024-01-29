@@ -3,7 +3,6 @@ const { getUserByID } = require("../db/sqlHelperFunctions/users")
 
 async function authorize(req, res, next) {
     try {
-        // "Bearer dkjfkdjfknjkdsn"
         const token = req.headers?.authorization?.split(" ")[1]
         if (!token) {
             req.user = null
